@@ -77,7 +77,7 @@
         }
     </style>
 
-    <title>Huixian Cheng</title>
+    <title>Huixian Cheng (程辉先)</title>
     <!--<link rel="stylesheet" type="text/css" href="/imgs/css" >-->
     <link rel="icon" type="image/jpg" href="images/yui.jpg">
 </head>
@@ -160,6 +160,7 @@
                         <p><strong>[2022.09.30]</strong> PCB-RandNet has been submitted to RA-L.
                         <p><strong>[2022.09.27]</strong> PCB-RandNet has been rejected by AAAI 2023.
                         <p><strong>[2022.03.16]</strong> CENet has been accepted by ICME 2022.
+                        <p><strong>[2021.12.02]</strong> PCB-RandNet has been submitted to RA-L.
 
                     </td>
                 </tr>
@@ -177,32 +178,31 @@
                 </tbody>
             </table>
 
-
-           <!--SECTION 5 -->
+            <!--SECTION-->
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
                 <tbody>
                 <tr>
-                    <td width="20%"><img src="images/trans.png" alt="PontTuset" width="180"
+                    <td width="20%"><img src="images/ppl.png" alt="PontTuset" width="180"
                                          style="border-style: none"></td>
                     <td width="80%" valign="top">
-                        <p><a href="paper/TransRVNet.pdf">
-                            <papertitle>TransRVNet: LiDAR Semantic Segmentation with Transformer
+                        <p><a href="https://arxiv.org/abs/2209.13797">
+                            <papertitle>PCB-RandNet: Rethinking Random Sampling for LIDAR Semantic Segmentation in Autonomous Driving Scene
                             </papertitle>
                         </a>
-                            <br><strong>Huixian Cheng</strong>, Xianfeng Han, Guoqiang Xiao<br>
-                            <em>Submitted to T-ITS, 2020</em>
-                            <br>
-                            <a href="paper/TransRVNet.pdf">Paper</a> /
-                            <a href="https://github.com/huixiancheng/TransRVNet"><font color="red">Code</font></a>
-                            <iframe src="https://ghbtns.com/github-btn.html?user=huixiancheng&repo=TransRVNet&type=star&count=true&size=small"
+                            <br><strong>Huixian Cheng</strong>, Xianfeng Han, Hang Jiang, Dehong He, Guoqiang Xiao<br>
+                            <em>Submitted to RA-L, 2022</em><br>
+                            <a href="https://arxiv.org/abs/2209.13797">Paper</a> /
+                            <a href="https://github.com/huixiancheng/PCB-RandNet"><font color="red">Code</font></a>
+                            <iframe src="https://ghbtns.com/github-btn.html?user=huixiancheng&repo=PCB-RandNet&type=star&count=true&size=small"
                                     frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-                        <p align="justify" style="font-size:13px"> In this paper, we present Transformer-Range-View Network (TransRVNet), a novel and powerful projection-based CNN-Transformer architecture to infer point-wise semantics. First, a Multi Residual Channel Interaction Attention Module (MRCIAM) is introduced to capture channel-level multi-scale feature and model intra-channel, inter-channel correlations based on attention mechanism. Then, in the encoder stage, we use a well-designed Residual Context Aggregation Module (RCAM), including a residual dilated convolution structure and a context aggregation module, to fuse information from different receptive fields while reducing the impact of missing points. Finally, a Balanced Non-square-Transformer Module (BNTM) is employed as fundamental component of decoder to achieve locally feature dependencies for more discriminative feature learning by introducing the non-square shifted window strategy. Extensive qualitative and quantitative experiments conducted on challenging SemanticKITTI and SemanticPOSS benchmarks have verified the effectiveness of our proposed technique.</p>
+                        <p align="justify" style="font-size:13px"> Fast and efficient semantic segmentation of large-scale LiDAR point clouds is a fundamental problem in autonomous driving. To achieve this goal, the existing point-based methods mainly choose to adopt Random Sampling strategy to process large-scale point clouds. However, our quantative and qualitative studies have found that Random Sampling may be less suitable for the autonomous driving scenario, since the LiDAR points follow an uneven or even long-tailed distribution across the space, which prevents the model from capturing sufficient information from points in different distance ranges and reduces the model's learning capability. To alleviate this problem, we propose a new Polar Cylinder Balanced Random Sampling method that enables the downsampled point clouds to maintain a more balanced distribution and improve the segmentation performance under different spatial distributions. In addition, a sampling consistency loss is introduced to further improve the segmentation performance and reduce the model's variance under different sampling methods. Extensive experiments confirm that our approach produces excellent performance on both SemanticKITTI and SemanticPOSS benchmarks.</p>
                         <p></p>
                     </td>
                 </tr>
                 </tbody>
             </table>
 
+            <!--SECTION-->
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
                 <tbody>
                 <tr>
@@ -228,24 +228,25 @@
                 </tbody>
             </table>
 
-            <!--SECTION 5 -->
+            <!--SECTION-->
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
                 <tbody>
                 <tr>
-                    <td width="20%"><img src="images/ppl.png" alt="PontTuset" width="180"
+                    <td width="20%"><img src="images/trans.png" alt="PontTuset" width="180"
                                          style="border-style: none"></td>
                     <td width="80%" valign="top">
-                        <p><a href="https://arxiv.org/abs/2209.13797">
-                            <papertitle>PCB-RandNet: Rethinking Random Sampling for LIDAR Semantic Segmentation in Autonomous Driving Scene
+                        <p><a href="paper/TransRVNet.pdf">
+                            <papertitle>TransRVNet: LiDAR Semantic Segmentation with Transformer
                             </papertitle>
                         </a>
-                            <br><strong>Huixian Cheng</strong>, Xian-Feng Han, Hang Jiang, Dehong He, Guoqiang Xiao<br>
-                            <em>Submitted to RA-L, 2022</em><br>
-                            <a href="https://arxiv.org/abs/2209.13797">Paper</a> /
-                            <a href="https://github.com/huixiancheng/PCB-RandNet"><font color="red">Code</font></a>
-                            <iframe src="https://ghbtns.com/github-btn.html?user=huixiancheng&repo=PCB-RandNet&type=star&count=true&size=small"
+                            <br><strong>Huixian Cheng</strong>, Xianfeng Han, Guoqiang Xiao<br>
+                            <em>Submitted to T-ITS, 2021</em>
+                            <br>
+                            <a href="paper/TransRVNet.pdf">Paper</a> /
+                            <a href="https://github.com/huixiancheng/TransRVNet"><font color="red">Code</font></a>
+                            <iframe src="https://ghbtns.com/github-btn.html?user=huixiancheng&repo=TransRVNet&type=star&count=true&size=small"
                                     frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-                        <p align="justify" style="font-size:13px"> Fast and efficient semantic segmentation of large-scale LiDAR point clouds is a fundamental problem in autonomous driving. To achieve this goal, the existing point-based methods mainly choose to adopt Random Sampling strategy to process large-scale point clouds. However, our quantative and qualitative studies have found that Random Sampling may be less suitable for the autonomous driving scenario, since the LiDAR points follow an uneven or even long-tailed distribution across the space, which prevents the model from capturing sufficient information from points in different distance ranges and reduces the model's learning capability. To alleviate this problem, we propose a new Polar Cylinder Balanced Random Sampling method that enables the downsampled point clouds to maintain a more balanced distribution and improve the segmentation performance under different spatial distributions. In addition, a sampling consistency loss is introduced to further improve the segmentation performance and reduce the model's variance under different sampling methods. Extensive experiments confirm that our approach produces excellent performance on both SemanticKITTI and SemanticPOSS benchmarks.</p>
+                        <p align="justify" style="font-size:13px"> In this paper, we present Transformer-Range-View Network (TransRVNet), a novel and powerful projection-based CNN-Transformer architecture to infer point-wise semantics. First, a Multi Residual Channel Interaction Attention Module (MRCIAM) is introduced to capture channel-level multi-scale feature and model intra-channel, inter-channel correlations based on attention mechanism. Then, in the encoder stage, we use a well-designed Residual Context Aggregation Module (RCAM), including a residual dilated convolution structure and a context aggregation module, to fuse information from different receptive fields while reducing the impact of missing points. Finally, a Balanced Non-square-Transformer Module (BNTM) is employed as fundamental component of decoder to achieve locally feature dependencies for more discriminative feature learning by introducing the non-square shifted window strategy. Extensive qualitative and quantitative experiments conducted on challenging SemanticKITTI and SemanticPOSS benchmarks have verified the effectiveness of our proposed technique.</p>
                         <p></p>
                     </td>
                 </tr>
@@ -253,7 +254,7 @@
             </table>
 
 
-            <!--SECTION 10 -->
+            <!--SECTION-->
             <table width="100%" align="center" border="0" cellspacing="0"
                    cellpadding="20">
                 <tbody>
