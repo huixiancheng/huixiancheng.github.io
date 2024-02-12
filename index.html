@@ -82,32 +82,6 @@
     <link rel="icon" type="image/jpg" href="images/yui.jpg">
 </head>
 
-<meta name="viewport" content="width=device-width">
-<style>
-html .sakana-box{
-  position: fixed;
-  right: 0;
-  bottom: 0;
-
-  transform-origin: 100% 100%; /* 从右下开始变换 */
-}
-</style>
-
-<div class="sakana-box"></div>
-
-<script src="https://cdn.jsdelivr.net/npm/sakana@1.0.8"></script>
-<script>
-// 取消静音
-Sakana.setMute(false);
-
-// 启动
-Sakana.init({
-  el:         '.sakana-box',     // 启动元素 node 或 选择器
-  scale:      .5,                // 缩放倍数
-  canSwitchCharacter: true,      // 允许换角色
-});
-</script>
-
 <body>
 <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
     <tbody>
@@ -123,8 +97,9 @@ Sakana.init({
                         <p align="center">
                             <name>Huixian Cheng 程辉先</name>
                         </p>
-                        <p align="justify">I am a final-year master's student major in CS in the College of Computer and Information
-                            Science at <a href="http://www.swu.edu.cn/">Southwest University</a>, Chongqing, China.
+                        <p align="justify">Currently, I am a LiDAR perception algorithm engineer at <a href="https://www.seyond.com/">Seyond</a>.
+                            Previously, I received my master's degree in computer science from
+                            <a href="http://www.swu.edu.cn/">Southwest University</a>, Chongqing, China in 2023.
                             Advised by both <a href="http://cis.swu.edu.cn/info/1013/1150.htm">Prof. Guoqiang Xiao</a>
                             and <a href="https://scholar.google.com/citations?user=4FaCTFgAAAAJ&hl=en&oi=ao">Prof.
                             Xianfeng Han.</a> I obtained my bachelor's degree in Naval Architecture and Ocean Engineering
@@ -138,7 +113,7 @@ Sakana.init({
                             <a href="https://scholar.google.com/citations?user=L39a9d8AAAAJ&hl=en">Google Scholar</a>
                         </p>
                     </td>
-                    <td align="right"><img class="photo" src="./images/new_chx.jpg" style="width:100%;max-width:100%"></td>
+                    <td align="right"><img class="photo" src="./images/chx.jpg" style="width:100%;max-width:100%"></td>
                 </tr>
                 </tbody>
             </table>
@@ -157,7 +132,7 @@ Sakana.init({
                             <li><p>
                                 <strong>3D Scene Understanding</strong>: <br>
                                 <p>
-                                    Efficient semantic segmentation in autonomous driving scenarios.
+                                    Efficient Det & Seg & Tracking in AD & V2X scenarios.
                                 </p></li>
                             <li><p>
                                 <strong>Multi-Sensor Fusion</strong>: <br>
@@ -177,10 +152,10 @@ Sakana.init({
                 <tr>
                     <td>
                         <heading>News</heading>
+                        <p><strong>[2024.01.28]</strong> PCB-RandNet has been accepted by ICRA 2024.
                         <p><strong>[2023.05.20]</strong> <font color="red"> Defended my master's thesis and was recommended as an outstanding thesis. (8/150+)</font>
-                        <p><strong>[2023.03.18]</strong> After an unpleasant broken contract by <a href="http://www.autowise.ai">Autowise.ai</a>, I am pleased to join <a href="https://www.innovusion.info">Innovusion</a>.
+                        <p><strong>[2023.03.18]</strong> Join <a href="https://www.innovusion.info">Innovusion</a>.
                         <p><strong>[2023.02.28]</strong> TransRVNet has been accepted by IEEE T-ITS. Not Good & Not Bad.
-                        <p><strong>[2023.02.13]</strong> PCB-RandNet has been submitted to IEEE TICPS.
                         <p><strong>[2022.03.16]</strong> CENet has been accepted by ICME 2022.
                         <p><strong>[2021.12.02]</strong> TransRVNet has been submitted to IEEE T-ITS.
 
@@ -212,16 +187,10 @@ Sakana.init({
                             </papertitle>
                         </a>
                             <br><strong>Huixian Cheng</strong>, Xianfeng Han, Hang Jiang, Dehong He, Guoqiang Xiao<br>
-                            <em>Submitted to TICPS, 2022</em> &nbsp
+                            <em>ICRA, 2024</em> &nbsp
                             <a href="https://github.com/huixiancheng/PCB-RandNet"><font color="red">Code</font></a>
                             <iframe src="https://ghbtns.com/github-btn.html?user=huixiancheng&repo=PCB-RandNet&type=star&count=true&size=small"
                                     frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-                        <p align="justify" style="font-size:13px"> Fast and efficient semantic segmentation of large-scale LiDAR point clouds is a fundamental problem in autonomous driving.
-                        To achieve this goal, the existing point-based methods mainly choose to adopt Random Sampling strategy to process large-scale point clouds.
-                        However, our quantative and qualitative studies have found that Random Sampling may be less suitable for the autonomous driving scenario,
-                        since the LiDAR points follow an uneven or even long-tailed distribution across the space, which prevents the model from capturing sufficient information from points in different distance ranges and reduces the model's learning capability.
-                        To alleviate this problem, we propose a new Polar Cylinder Balanced Random Sampling method that enables the downsampled point clouds to maintain a more balanced distribution and improve the segmentation performance under different spatial distributions.
-                        In addition, a sampling consistency loss is introduced to further improve the segmentation performance and reduce the model's variance under different sampling methods.
                         </p>
                         <p></p>
                     </td>
@@ -245,10 +214,6 @@ Sakana.init({
                             <a href="https://github.com/huixiancheng/CENet"><font color="red">Code</font></a>
                             <iframe src="https://ghbtns.com/github-btn.html?user=huixiancheng&repo=CENet&type=star&count=true&size=small"
                                     frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-                        <p align="justify" style="font-size:13px">  In this paper, we present a concise and efficient image-based semantic segmentation network, named CENet.
-                        In order to improve the descriptive power of learned features and reduce the computational as well as time complexity,
-                        our CENet integrates the convolution with larger kernel size instead of MLP, carefully-selected activation functions, and multiple auxiliary segmentation heads with corresponding loss functions into architecture.
-                        Quantitative and qualitative experiments demonstrate that our pipeline achieves much better mIoU and inference performance compared with state-of-the-art models.</p>
                         <p></p>
                     </td>
                 </tr>
@@ -271,11 +236,6 @@ Sakana.init({
                             <a href="https://github.com/huixiancheng/TransRVNet"><font color="red">Code</font></a>
                             <iframe src="https://ghbtns.com/github-btn.html?user=huixiancheng&repo=TransRVNet&type=star&count=true&size=small"
                                     frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-                        <p align="justify" style="font-size:13px"> In this paper, we present Transformer-Range-View Network (TransRVNet), a novel and powerful projection-based CNN-Transformer architecture to infer point-wise semantics.
-                        First, a Multi Residual Channel Interaction Attention Module (MRCIAM) is introduced to capture channel-level multi-scale feature and model intra-channel, inter-channel correlations based on attention mechanism.
-                        Then, in the encoder stage, we use a well-designed Residual Context Aggregation Module (RCAM), including a residual dilated convolution structure and a context aggregation module,
-                        to fuse information from different receptive fields while reducing the impact of missing points.
-                        Finally, a Balanced Non-square-Transformer Module (BNTM) is employed as fundamental component of decoder to achieve locally feature dependencies for more discriminative feature learning by introducing the non-square shifted window strategy.
                         </p>
                         <p></p>
                     </td>
